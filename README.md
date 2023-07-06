@@ -10,7 +10,7 @@ Spatial Audio와 Real-time detection Algorithm을 이용한 시각장애인용 �
 - https://github.com/AudioLabYork/SALTE-audio-renderer : 공간 오디오 청취 실험을 수행하기 위한 전용 오디오 렌더링 엔진과 가상 현실 인터페이스
 --------
 #### Sound test Code (Simple ex)
-```
+```py
 !pip install simpleaudio
 import numpy as np
 import simpleaudio as sa
