@@ -12,43 +12,36 @@ Spatial Audio와 Real-time detection Algorithm을 이용한 시각장애인용 �
 #### Sound test Code (Simple ex)
 ```
 !pip install simpleaudio
-
 import numpy as np
 import simpleaudio as sa
 import math
 
 # Choose a duration for the sound
 duration = 1.0  # seconds
-
 # Choose a frequency for the sound
 freq = 440  # Hz
-
 # Choose a sample rate
 sample_rate = 44100
-
 # Generate a time array
 t = np.linspace(0, duration, int(sample_rate * duration), False)
-
 # Generate a sinusoidal signal
 note = np.sin(freq * t * 2 * np.pi)
-
 # Ensure that highest value is in 16-bit range
 audio = note * (2**15 - 1) / np.max(np.abs(note))
 audio = audio.astype(np.int16)
-
+# Create stereo sound with different volumes in the channels
+audio_stereo = np.zeros((audio.shape[0], 2), dtype=np.int16)
+audio_stereo[:, 0] = audio * 0.45  # 45% volume in left channel
+audio_stereo[:, 1] = audio  # 100% volume in right channel
 # Start playback
-play_obj = sa.play_buffer(audio, 1, 2, sample_rate)
-
+play_obj = sa.play_buffer(audio_stereo, 2, 2, sample_rate)
 # Wait for playback to finish before exiting
 play_obj.wait_done()
-
 # Get the user's guess
 user_azimuth = input("Enter your guess for the azimuth (in degrees): ")
 user_distance = input("Enter your guess for the distance (in meters): ")
-
 # Print the user's guess
 print(f"Your guess for azimuth: {user_azimuth}, for distance: {user_distance}")
-
 ```
 
 ## 2. Detection test
