@@ -45,6 +45,14 @@ print(f"Your guess for azimuth: {user_azimuth}, for distance: {user_distance}")
 ```
 
 ## 2. Detection test
+
+## 3. Depth Camera 
+#### Getting Start 
+-
+-
+-
+
+
 ---
 #### next plan
 1. Yolo model 학습
