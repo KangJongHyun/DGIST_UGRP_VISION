@@ -45,3 +45,6 @@ print(f"Your guess for azimuth: {user_azimuth}, for distance: {user_distance}")
 ```
 
 ## 2. Detection test
+---
+1. Yolo model 학습
+2. 탐지된 물체의 거리와 이름 프린트하기
