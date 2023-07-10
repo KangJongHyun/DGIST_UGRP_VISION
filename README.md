@@ -45,6 +45,27 @@ print(f"Your guess for azimuth: {user_azimuth}, for distance: {user_distance}")
 ```
 
 ## 2. Detection test
+### 1. cv2 module
+cv_yolo_test.ipynb 파일은 yolo v4 버전을 사용한 물체 인식 코드이다.
+yolov4.cfg 는 모델 구성 파일이며 coco.names 는 모델이 포함하는 클래스의 이름이 포함된 파일이다.
+yolov4.weights 는 모델 가중치 파일이며 용량이 너무 커서 업로드 하지 못 했다.
+
+코드는 yolo 모델을 불러오는 과정, 물체 인식과 바운딩 박스를 설정하는 과정, 연결된 카메라를 인식하고 영상을 실시간으로 받아오는 과정 으로 나누어진 노트북 파일이다.
+CPU를 사용하면 상당히 느리지만
+GPU를 사용하면 실시간으로 물체 확인이 가능하다.
+
+
+### 2. example_file
+intel 에서 제공해주는 코드 중 잘 동작하며 기능이 있는 것들 위주로 노트북 파일을 만들었다.
+
+
+### 3. tensorflow
+tensorflow 를 사용한 파일이며 에러가 자주 발생하고 요즘 많이 사용되지 않는 모듈이다.
+
+
+### 4. torch
+pytorch 를 사용한 파일이다.
+
 
 ## 3. Depth Camera 
 #### Getting Start 
