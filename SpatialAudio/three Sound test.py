@@ -18,7 +18,7 @@ freq2 = 880  # Hz
 note2 = np.sin(freq2 * t * 2 * np.pi)
 
 # Generate the third sinusoidal signal (right channel)
-freq3 = 1320  # Hz
+freq3 = 1760  # Hz
 note3 = np.sin(freq3 * t * 2 * np.pi)
 
 # Ensure that the values are in the range -1 to 1
@@ -37,4 +37,3 @@ sd.play(audio_stereo, sample_rate, blocking=True)
 
 # Wait for playback to finish before exiting
 sd.wait()
-
