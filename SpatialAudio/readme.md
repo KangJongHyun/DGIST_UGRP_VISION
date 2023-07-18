@@ -22,3 +22,6 @@ https://github.com/dolbyio-samples/comms-app-react-videocall
 
 # Python Code로 Spatial Audio 구현 
 sounddevice라이브러리에서 소리를 구현(여러 개수의 소리 중복 가능, 각각의 소리 높 낮이 구분가능(위험도가 높은 물체일 수록 높은 음의 소리를 이용하면 좋을 것 같음), 소리 크기 조절가능 (소리 크기로 거리 표현), 이어폰 기준 좌우 음향 조절 가능(방향 구현) -> Three Sound test.py 
+
+## 기준 
+1. """ audio_stereo[:, 2] = note3  # 100% volume in right channel """ 
