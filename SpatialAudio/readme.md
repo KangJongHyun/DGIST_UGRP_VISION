@@ -25,7 +25,7 @@ sounddevice라이브러리에서 소리를 구현(여러 개수의 소리 중복
 
 ## 기준 
 1. 5m의 거리 소리를 100% Volume으로 조정함, 이후 거리에 따라 Volume 조절
-'''py
+```py
   audio_stereo[:, 2] = note3  # 100% volume in right channel
-'''
+```
 3. 
