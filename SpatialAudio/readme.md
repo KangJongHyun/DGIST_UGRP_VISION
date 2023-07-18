@@ -30,7 +30,7 @@ sounddevice라이브러리에서 소리를 구현(여러 개수의 소리 중복
 ```
 2. 방향 조절 기준 만들기
 3. 연속적으로 소리 내면서 높이 높낮이 조절하기
-```
+```py
 # Define the decreasing volume envelope
 fade_out = np.linspace(1.0, 0.0, int(sample_rate * duration))
 
