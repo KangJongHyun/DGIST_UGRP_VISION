@@ -41,4 +41,6 @@ audio_stereo *= fade_out[:, np.newaxis]
 sd.play(audio_stereo, sample_rate, blocking=True)
 ```
 소리 크기 점점 낮추는 로직
-
+------
+# 튜토리얼 
+Tutorial.py 파일을 통해서 사용자가 앞으로 사용될 음향에 대해서 학습할 수 있고, 이를 통해서 미리 해당 소리의 거리와 방향을 학습할 수 있게 한다. 
