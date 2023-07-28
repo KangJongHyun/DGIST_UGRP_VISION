@@ -44,3 +44,9 @@ sd.play(audio_stereo, sample_rate, blocking=True)
 ------
 ## 튜토리얼 
 Tutorial.py 파일을 통해서 사용자가 앞으로 사용될 음향에 대해서 학습할 수 있고, 이를 통해서 미리 해당 소리의 거리와 방향을 학습할 수 있게 한다. 
+```
+Enter your guess for the distance from the sound source (in meters): 8
+Enter your guess for the direction in degrees (0 to 90): 5
+Incorrect. The correct distance is 7.75 meters and the correct angle is 82.35 degrees.
+```
+이런식으로 소리를 듣게 되면, 사용자는 해당 소리의 거리와 방향을 쓰고 오차 범위 30퍼센트 내에서 정답으로 인정된다. 
